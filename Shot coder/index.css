@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /* font-size: 62.5%; */
+  --color-primary: #f4e0ea;
+  --color-text: #000000;
+  --card-shadow: 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185),
+    0px 20px 13px rgba(0, 0, 0, 0.035),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
+  --h1-fontsize: clamp(2.6rem, 3vw, 7rem);
+  --h2-fontsize: clamp(2.2rem, 2.2vw, 5rem);
+  --h3-fontsize: clamp(2rem, 1.8vw, 4rem);
+  --p-h4-fontsize: clamp(1.8rem, 1.3vw, 3.4rem);
+  --h5-fontsize: clamp(1.6rem, 1.2vw, 2.7rem);
+  --h6-fontsize: clamp(1.4rem, 1.1vw, 2.3rem);
+}
+section {
+  padding: 2rem 0;
+}
+.promo {
+  font-size: 0.7em;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: var(--color-primary);
+  font-size: 0.7em;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  font-family: "Avenir Next Rounded", sans-serif;
+  font-weight: 400;
+}
+
+.promo a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.promo__break {
+  opacity: 0.5;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust the height as needed */
+}
+.fa-solid {
+  color: var(--color-text);
+}
+
+.dropdown-menu {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-text);
+}
+
+/* .logo {
+  max-height: 100%;
+  max-width: 100%;
+} */
+.tsuki-icon-bar {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+
+  color: var(--color-text);
+}
+.fa-solid {
+  color: var(--color-text);
+}
+
+.media-icons {
+  display: flex;
+  list-style: none;
+  color: var(--color-text);
+  gap: 1rem;
+}
+
+.sticky {
+  border: 1px solid var(--color-text);
+}
+.cover-image img {
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url(images/background.jpg); */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text-box {
+  width: 90%;
+  color: var(--color-text);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 800%);
+  text-align: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid #ffffff;
+  padding: 12px 34px;
+  font-size: 14px;
+  /* margin-top: 900px; */
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+  transition: 3s;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .text-box {
+    top: 70%; /* Adjust the value to position it lower or higher */
+  }
+
+  .container {
+    align-items: flex-end; /* Align items to the bottom of the container */
+  }
+}
+
+/* Shop Accessories index-products theme coll-heading */
+
+.theme-coll-heading h2 {
+  text-align: center;
+}
+.card-group {
+  border: 1px solid var(--color-text);
+}
+.card {
+  border: 1px solid var(--color-text);
+}
+
+.card-footer small {
+  display: block;
+  text-align: center;
+}
+
+.sold-out {
+  margin-top: 5px; /* Adjust as needed */
+  text-align: center;
+}
+
+/* Shop Accessories index-products theme coll-heading  End*/
+
+#carouselExampleAutoplaying .carousel-inner img {
+  height: 400px; /* Adjust the height as desired */
+  z-index: -1;
+}
+
+/* Image Gallary hover using  CSS starting  */
+.card {
+  position: relative;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover:before {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as desired */
+}
+
+.card-img-top {
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  opacity: 0.7; /* Adjust the opacity as desired */
+}
+/* Image Gallary using CSS End */
+
+.footer .fa-solid {
+  margin-right: 5px; /* Adjust the margin value as desired */
+}
+
+/* Footer for the Tsuki.Market Website starting   */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  /* margin: 20px; */
+}
+.footer span {
+  color: #ffffff;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: medium;
+}
+
+.Our-Company p {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.Our-Company span {
+  font: inherit;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  display: block;
+  font-weight: lighter;
+  font-size: smaller;
+}
+.Our-Company p {
+  font-size: smaller;
+}
+.Our-Company ul li {
+  list-style: none;
+}
+
+.social-media-icons {
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  gap: 1rem;
+}
+.form-control {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+.Our-Company small {
+  font-family: inherit;
+  font-weight: lighter;
+  font-size: xx-small;
+}
+.row {
+  margin: 35px;
+}
+
+/* Footer for the Tsuki.Market Website Ending   */
+
+/* * Media Queries  */
+@media (max-width: 767px) {
+  /* Adjust the layout for screens up to 767px */
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  .footer .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
